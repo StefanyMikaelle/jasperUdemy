@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Curso Jasper Report</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+    <h1>Bem vindo ao curso!!!</h1>
+    <h2>Relatório 01</h2>
+    <a th:href="@{/relatorio/pdf/jr1(code='01', acao='v')}">Abrir</a>
+    <a th:href="@{/relatorio/pdf/jr1(code='01', acao='d')}">Download</a>
+
+    <hr>
+
+
+<!--&lt;!&ndash;    <a th:href="@{/relatorio/pdf/jr9(code='01', acao='v')}">Abrir</a>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <h2>Relatório 09</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;        <form th:action="@{/relatorio/pdf/jr9/09}" method="get">&ndash;&gt;-->
+<!--&lt;!&ndash;            <select id="nivel" name="nivel">&ndash;&gt;-->
+<!--&lt;!&ndash;                <option value=""> Selecione o Nível </option>&ndash;&gt;-->
+<!--&lt;!&ndash;                <option th:each="nivel : ${niveis}" th:value="${nivel}" th:text="{nivel}"> Selecione o Nível </option>&ndash;&gt;-->
+<!--&lt;!&ndash;            </select>&ndash;&gt;-->
+<!--&lt;!&ndash;            <select id="uf" name="uf">&ndash;&gt;-->
+<!--&lt;!&ndash;                <option value=""> Selecione o Nível </option>&ndash;&gt;-->
+<!--&lt;!&ndash;                <option th:each="uf : ${ufs}" th:value="${uf}" th:text="{uf}"> Selecione o Nível </option>&ndash;&gt;-->
+<!--&lt;!&ndash;            </select>&ndash;&gt;-->
+<!--&lt;!&ndash;            <button type="submit">Buscar</button>&ndash;&gt;-->
+<!--&lt;!&ndash;        </form>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+</body>
+</html>
